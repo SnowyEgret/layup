@@ -2,7 +2,7 @@ module DS
 module LayUp
   class ShopDrawing
     def self.test
-      path = File.join(__dir__, 'layout/test.layout')
+      path = File.join(__dir__, 'test/test.layout')
       # doc = Layout::Document.new(path)
       doc = Layout::Document.new
 
