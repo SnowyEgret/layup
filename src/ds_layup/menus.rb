@@ -4,6 +4,7 @@ module DS
 module LayUp
 
   require 'english.rb'
+  Sketchup.require(File.join(PLUGIN_DIR, 'parameters'))
 
   module Menus
     @parameters = Parameters.new
@@ -39,8 +40,8 @@ module LayUp
       return unless inputs
 
       input = inputs[0]
-      par = dialog_pars[:stud_depth]
-      par.value = @parameters.stud_depths.key(input)
+      par = dialog_pars[:foo_values]
+      par.value = @parameters.foo_values.key(input)
       par.default = input
 
       @parameters.update
