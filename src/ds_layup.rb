@@ -16,7 +16,7 @@ module DS
 
     PLUGIN_ID = File.basename(path, '.*')
     PLUGIN_DIR = File.join(File.dirname(path), PLUGIN_ID)
-    REQUIRED_SU_VERSION = 14
+    REQUIRED_SU_VERSION = 18
     EXTENSION = SketchupExtension.new('LayUp', File.join(PLUGIN_DIR, 'main'))
     EXTENSION.creator     = 'Duncan Swain (SnowyEgret)'
     EXTENSION.description = 'Creates a Layout file'
